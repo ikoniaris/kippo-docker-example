@@ -19,7 +19,7 @@ RUN git clone https://github.com/desaster/kippo.git /opt/kippo
 RUN addgroup --gid 2000 tpot 
 RUN adduser --system --no-create-home --shell /bin/bash --uid 2000 --disabled-password --disabled-login --gid 2000 tpot
 RUN mkdir -p /data/kippo/log/tty/ /data/kippo/downloads/ /data/kippo/keys/ /data/kippo/misc/ /var/run/kippo/
-RUN echo "root:0:123456" > /data/kippo/userdb.txt
+RUN echo "root:0:123456" > /data/kippo/misc/userdb.txt
 RUN chmod 760 -R /data && chown tpot:tpot -R /data && chown tpot:tpot /var/run/kippo
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD kippo.cfg /opt/kippo/
