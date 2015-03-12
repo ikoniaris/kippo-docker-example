@@ -17,6 +17,6 @@ The `supervisord.conf` is used to start kippo under supervision of supervisord.
 
 Using upstart, copy the file `upstart/kippo.conf` to `/etc/init/kippo.conf` and start kippo using
 
-    service start kippo
+    service kippo start
 
 This will make sure that the docker container is started with the appropriate rights and port mappings. Further, it autostarts during boot.
