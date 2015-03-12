@@ -15,7 +15,7 @@ The `setup.sql` is also tailored to fit the T-Pot environment.
 
 The `supervisord.conf` is used to start kippo under supervision of supervisord. 
 
-Using upstart, copy the `upstart/kippo.conf` to `/etc/init/kippo.conf` and start using
+Using upstart, copy the file `upstart/kippo.conf` to `/etc/init/kippo.conf` and start kippo using
 
     service start kippo
 
